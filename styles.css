@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
+    sans-serif;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+:root {
+  --dark-blue: #003049;
+}
+
+main {
+  padding: 0 80px;
+}
+
+.main-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.project-screenshot {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+.project-content {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-title {
+  display: flex;
+  align-items: center;
+}
+
+.project-name {
+  flex: 1;
+  font-size: 1.3rem;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  font-size: 0px;
+  gap: 10px;
+}
+
+.project-links img {
+  width: 20px;
+  height: auto;
+}
