@@ -1,25 +1,101 @@
+:root {
+  --dark-blue: #003049;
+}
+
 body {
   margin: 0;
   font-family: Avenir, Montserrat, Corbel, "URW Gothic", source-sans-pro,
     sans-serif;
 }
 
-h2 {
-  font-size: 1.7rem;
+a {
+  text-decoration: none;
 }
 
-:root {
-  --dark-blue: #003049;
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+.header-background {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  aspect-ratio: 3;
+  clip-path: polygon(0 0, 100% 0%, 100% 55%, 0% 80%);
+  background: var(--dark-blue);
+}
+
+.background-wrap {
+  position: absolute;
+  top: 0;
+  filter: drop-shadow(-1px 3px 3px rgba(50, 50, 0, 0.5));
+  z-index: -1;
+}
+
+.header-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-img img {
+  max-width: 100%;
+  height: 350px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: block;
+}
+
+.header-img {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  float: left;
+  z-index: 1;
+}
+
+.header-img h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.3rem;
+}
+
+.header-about {
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-about .social-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 main {
   padding: 0 80px;
 }
 
+main h2 {
+  display: flex;
+  justify-content: center;
+}
+
 .main-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  margin: 20px 0 50px 0;
 }
 
 .project-card {
@@ -65,4 +141,43 @@ main {
 .project-links img {
   width: 20px;
   height: auto;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  color: #ffffff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer img {
+  max-width: 100%;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  padding: 30px;
+}
+
+.footer-contact .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-img {
+  flex: 1;
+}
+
+.phone-div,
+.email-div {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen {
 }
