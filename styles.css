@@ -146,7 +146,6 @@ main h2 {
 footer {
   background-color: var(--dark-blue);
   color: #ffffff;
-  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -154,6 +153,7 @@ footer {
 
 footer img {
   max-width: 100%;
+  display: block;
 }
 
 .footer-contact {
